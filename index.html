@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоомагазин "Барсик"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🐱 Зоомагазин "Барсик" 🐶</h1>
+    <p>Всё для любимых питомцев</p>
+    <nav>
+        <button id="showCatalogBtn">Каталог</button>
+        <div class="cart-info" id="cartBtn">
+            🛒 Корзина (<span id="cartCount">0</span>)
+        </div>
+    </nav>
+</header>
+
+<div class="filters">
+    <button class="filter-btn active" data-cat="all">Все</button>
+    <button class="filter-btn" data-cat="Корм">🍖 Корм</button>
+    <button class="filter-btn" data-cat="Игрушки">🎾 Игрушки</button>
+    <button class="filter-btn" data-cat="Аксессуары">🧣 Аксессуары</button>
+    <button class="filter-btn" data-cat="Лежанки">🛏️ Лежанки</button>
+</div>
+
+<div class="catalog" id="catalog"></div>
+
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <h2>🛍️ Моя корзина</h2>
+        <div id="cartItems"></div>
+        <div class="total" id="cartTotal">Итого: 0 ₽</div>
+        <button id="clearCartBtn">Очистить</button>
+        <button id="closeModalBtn">Закрыть</button>
+        <button id="checkoutBtn" style="background:#ff9800;">Оформить</button>
+    </div>
+</div>
+
+<footer>
+    <p>🐾 Все права защищены :3.</p>
+    <p>© 2026 Зоомагазин "Барсик"</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
